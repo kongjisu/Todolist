@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>TodoList</title>
+    <style>
+        .container input{
+            color:gray;
+            padding-left: 15px;
+            width: 600px;
+            height: 100%;
+            border: none;
+            font-size:20px;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .container button{
+                width: 30px;
+                height: 100;
+                border:none;
+                border-radius: 3px;
+                cursor:pointer;
+        }
+
+           
+        .todo li {
+            width: 650px;
+            line-height: 40px;
+            list-style: none;
+            position:relative;
+            margin-bottom: 9px;
+            text-indent: 15px;
+            background: rgb(241,242,241);
+            border-radius: 3px;
+            font-weight: 400;
+            cursor:pointer
+
+        }
+    </style>
+</head>
+<body>
+    <h1>TodoList</h1>
+    <div class ="container">
+        <input id ="addBox" type="text"  placeholder="할 일 입력">  <!-- 할 일 입력창 -->
+        <button id="addTodo">+</button>
+        <!-- <input id="addTodo" type="button" value="입력"> -->
+     
+    </div>
+    <div id="todo" class ="todo">    </div>
+     
+    <script src="Todolist.js"></script>
+    </body>
+<!-- //이제 할 일 추가 기능을 만들기  -->
+ 
+  
+</html>
